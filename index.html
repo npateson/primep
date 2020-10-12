@@ -44,7 +44,6 @@
             <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
             <li class="nav-item"><a class="nav-link" href="#feature-section">Features</a></li>
             <li class="nav-item"><a class="nav-link" href="#testims">Testimonials</a></li>
-
           </ul>
         </div>
       </nav>
@@ -296,30 +295,38 @@
     </div>
   </section>
   <hr>
-  <section id="contact-section">
-    <h2 class="contact-head">CONTACT US</h2>
-    <hr>
-    <h4>Leave us a message, we will get in touch with you ASAP</h4>
-
-    <form class="form" action="mailto:npateson@yahoo.com" method="post">
-      <label for="name">
-        <h5>Your Name : </h5>
-      </label>
-      <input type="text" id="name" placeholder="Enter your name here" "value="">
-<br>
-<label for=" email">
-      <h5>Your email : </h5></label>
-      <input type="email" id="email" name="" placeholder="Enter your email here" "value="">
-<br>
-<br>
-<textarea  rows=" 8" cols="30">Enter your text here</textarea>
-      <input class=" btn btn-lg btn-dark submit-but" type="submit" name="" value="SUBMIT">
-    </form>
-
-    <h5 class="address">Our address <img class="footer-image" style="background-color: white;"
+  
+  <!-- contact us section -->
+  <section id="contact-section" >
+    <div>
+      <h2 class="contact-head">CONTACT US</h2>
+    </div>
+    <div class="container col col-md-5 col-12 ">
+      <form class="form" action="mailto:npateson@yahoo.com" method="post">
+        <div class="d-flex my-2">
+          <label for="name">Name: </label>
+          <input type="text" id="name" placeholder="Enter your name here" class="form-control">
+        </div>
+        <div class="d-flex my-2">
+          <label for="email">Email: </label>
+          <input type="email" id="email" name="" placeholder="Enter your email here" class="form-control">
+        </div>
+        <div class="d-flex my-2">
+          <label for="message">Message: </label>
+          <textarea class="form-control" cols="8" rows="10">Enter your message here</textarea>
+        </div>
+        <div class="my-2">
+          <input class=" btn btn-lg btn-dark submit-but" type="submit" name="" value="SUBMIT" >
+        </div>
+      </form>
+    </div>
+    <div>
+      <h5 class="address">Our address <img class="footer-image" style="background-color: white;"
         src="https://www.flaticon.com/premium-icon/icons/svg/3037/3037344.svg" alt=""> is Entree Simbock, Infront of
       Institut Universitaire des Sciences, Technologie et Esthétiques, Mendong, Yaoundé, Cameroon</h5>
+    </div>
   </section>
+  <!-- End of Contact section -->
 
   <section>
     <footer>
