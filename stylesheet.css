@@ -1,8 +1,21 @@
-f#header {
-  background-image: url("https://i.imgur.com/kG9ngF6.png" );
+#header {
+  /* background-image: url("images/primepub.jpg");
   background-size: cover;
  background-repeat: no-repeat;
- height: auto;
+ height: auto; */
+ background: linear-gradient(to right, rgba(0, 0, 0, 0.7),
+ rgba(0, 0, 0, 0.1)), 
+ url("images/primepub.jpg");
+ height: 60vh;
+ background-position: center;
+ background-size: cover;
+ box-shadow:rgba(0, 0, 0, 0.1)
+}
+
+@media(max-width: 300px) {
+  #header {
+    height: 100vh;
+  }
 }
 
 .navbar {
@@ -21,20 +34,35 @@ a, .navbar-brand {
 .small-logo-image {
   border-radius: 100%;
   width:30px;
-  margin: 5px
+  margin: 5px;
+  object-fit: cover;
 }
-.logo-image {
-  display: block;
-  border-radius: 100%;
-  width: 80%;
-  margin: 75px auto;
+
+
+#mainhead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .features-image {
-  display: block;
-  margin: auto;
   border-radius: 150px;
-  width: 80%;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.features-section img {
+  /* display: block;
+  margin: auto;
+  text-align: center;
+  display:grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%; */
+  height: 400px;
 }
 
 
@@ -46,10 +74,11 @@ a, .navbar-brand {
   background: none;
   display: inline-block;
   position: relative;
-  float:left;
+  /* float: left; */
 }
 #description-p {
   display: inline;
+  color: #fff; 
 }
 
 h2 {
@@ -60,8 +89,9 @@ h2 {
 }
 .menu-section {
   background-color: #f7fbe1;
+  
 }
-h3 {
+#hero-p {
   color: black;
   font-family: Lobster;
   font-weight: bold;
@@ -82,15 +112,16 @@ li h4{
   text-align: left;
 
 }
-li {
+/* li {
 
-}
+} */
 
 
 .lets-eat {
   font-family: Lobster;
-  margin-top: 50px;
+  margin-top: 10px;
   margin-left: 50px;
+  background : #ffc500
 }
 
 .menu-header {
@@ -151,9 +182,11 @@ background-color: #fffafa;
   font-family: Lobster;
 }
 
-.features-carousel-item {
+.features-carousel-item img{
   border-radius: 150px;
-  width: 98%;
+  height: 400px;
+  width: 600px;
+  border: 3px solid orange;
 }
 
 .testimonial-head {
